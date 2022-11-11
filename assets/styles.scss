@@ -1,7 +1,7 @@
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{background-image: url(./images/dark-marble.jpg);
 background-size: cover;background-position: center center;
-    background-color: rgb(183, 125, 192); 
+    background-color: rgb(20, 14, 93); 
     background-attachment:fixed;
     
  } 
@@ -21,19 +21,53 @@ font-weight: $extra-bold;margin-right: 20px;}
 
 .navbar,.navbar-brand {font-size:$small-font;font-family:$default-font;}
 .logo{width: 40px;}
-#main{padding-bottom:900px ;font-family: $default-font;
-padding-top: $medium-padding;}
-.float-container h2{padding-bottom:10px;
+#main{padding-bottom:400vh ;font-family: $default-font;
+height: 20vh;}
+.float-container h2{
+   padding-bottom:10px;
 font-size: $large-font;font-weight: $extra-bold;}
-.float-container{padding-left: $large-padding;}
-.about-container{padding-bottom: $xl-padding;padding-top:600px;
+.float-container{
+   padding-left: 30vw;}
+.about-container{
 margin-right: 10%;margin-left: 10%;}
+#about2 {padding-top: 100vh;}
+
+.button{display:inline-block;
+   padding:0.3em 1.2em;
+   margin:0 0.3em 0.3em 0;
+   border-radius:2em;
+   box-sizing: border-box;
+   text-decoration:none;
+   
+   font-weight:$semi-bold-weight;
+   color:#FFFFFF;
+   background-color: rgb(12, 7, 66);
+   text-align:center;
+   transition: all 0.2s;}
+    .button:hover{background-color:rgb(21, 47, 130);
+   }
+   .float-child>a:hover{color: #FFFFFF;}
+   @media all and (max-width:30em)
+   {   .button{
+      display:block;
+      margin:0.2em auto;
+      }
+      }
+      
+
+
+
+
+
+
+
+
 
 
 .about-container h4{font-weight: $regular-weight;}
 .nerd{font-weight: $semi-bold-weight;}
-#about{padding-top:$xl-padding;
-padding-bottom: 950px;font-family: $default-font;}
+#about{height: 100vh;
+padding-bottom: 100vh;font-family: $default-font;}
 .container-fluid h2{font-size: $large-font;
 font-weight: $semi-bold-weight;padding-bottom:60px;}
 .container-fluid h3,.Projects h3{font-size:$small-font;
@@ -46,7 +80,7 @@ font-weight: $regular-weight;padding-bottom: 20px;}
 div.col{display: flex;}
 .img-description p {text-align:justify;}
 .Projects{font-family: $default-font;
-padding-bottom: 950px;padding-top: $xl-padding;}
+padding-top: 400vh;}
 .Projects h2{font-size: $large-font;font-weight: $semi-bold-weight;}
 
 #Projects-img{width: 450px;}
@@ -54,7 +88,7 @@ padding-bottom: 950px;padding-top: $xl-padding;}
 font-weight: $regular-weight;}
 .projects-col2 h3 {padding-bottom: 20px;}
 .projects-col2 li {padding-bottom: 15px;}
-.footer{padding-top: $xl-padding;
+.footer{padding-top: 300vh; padding-bottom: 10vh;
 font-family: $default-font;font-size: $small-font;
 font-weight: $regular-weight;}
 .footer h4{font-weight: $semi-bold-weight;}
@@ -62,6 +96,8 @@ font-weight: $regular-weight;}
 .icons{color:white}
 .icons-i {padding-right: 45px;width: 35px;}
 a:link, i {color: white;}
+
+
 
 @media only screen and (min-width:300px)and 
 (max-width:420px){.container-fluid{margin:0 auto;}
@@ -80,7 +116,7 @@ margin-right: auto;}
 }
 @media only screen and(min-width:421px) and 
 (max-width:768px) {
-   .float-container{padding-left:150px;}
+   .float-container{padding-left:5vw;}
    .container-fluid{margin-left: auto ;
       margin-right: auto;} 
    .about-container{margin-right:10%;

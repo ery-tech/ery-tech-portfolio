@@ -8,7 +8,7 @@ body {
     background-image: url(./images/dark-marble.jpg);
     background-size: cover;
     background-position: center center;
-    background-color: #b77dc0;
+    background-color: #140e5d;
     background-attachment: fixed;
 }
 
@@ -39,9 +39,9 @@ body {
 }
 
 #main {
-    padding-bottom: 900px;
+    padding-bottom: 400vh;
     font-family: "Roboto slab", serif;
-    padding-top: 100px;
+    height: 20vh;
 }
 
 .float-container h2 {
@@ -51,16 +51,46 @@ body {
 }
 
 .float-container {
-    padding-left: 250px;
+    padding-left: 30vw;
 }
 
 .about-container {
-    padding-bottom: 450px;
-    padding-top: 600px;
     margin-right: 10%;
     margin-left: 10%;
 }
 
+#about2 {
+    padding-top: 100vh;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #0c0742;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: #152f82;
+}
+
+.float-child > a:hover {
+    color: #FFFFFF;
+}
+
+@media all and (max-width: 30em) {
+    .button {
+        display: block;
+        margin: 0.2em auto;
+    }
+}
 .about-container h4 {
     font-weight: 400;
 }
@@ -70,8 +100,8 @@ body {
 }
 
 #about {
-    padding-top: 450px;
-    padding-bottom: 950px;
+    height: 100vh;
+    padding-bottom: 100vh;
     font-family: "Roboto slab", serif;
 }
 
@@ -102,8 +132,7 @@ div.col {
 
 .Projects {
     font-family: "Roboto slab", serif;
-    padding-bottom: 950px;
-    padding-top: 450px;
+    padding-top: 400vh;
 }
 
 .Projects h2 {
@@ -130,7 +159,8 @@ div.col {
 }
 
 .footer {
-    padding-top: 450px;
+    padding-top: 300vh;
+    padding-bottom: 10vh;
     font-family: "Roboto slab", serif;
     font-size: 18px;
     font-weight: 400;
@@ -205,7 +235,7 @@ a:link, i {
 }
 @media only screen and (min-width: 421px) and (max-width: 768px) {
     .float-container {
-        padding-left: 150px;
+        padding-left: 5vw;
     }
 
     .container-fluid {
