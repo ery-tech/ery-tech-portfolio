@@ -69,4 +69,6 @@ form{
     font-size: 1em;  
     justify-content: center;
 }  
+#button:hover{background-color: #6336f4;
+color: #fff;}
 img{width: 20vw;height: 40vh;}
