@@ -125,7 +125,7 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 600;
-    color: #230e82;
+    color: #230e82 !important;
     background-color: white;
     text-align: center;
     transition: all 0.2s;
@@ -133,9 +133,6 @@ body {
 
 .button:hover {
     background-color: silver;
-}
-
-.float-child2 > a:hover {
     color: #230e82;
 }
 
