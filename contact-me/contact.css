@@ -12,19 +12,13 @@ body{
     align-items: center;  
     background: #EEF3FA;  
 }  
-.container{  
-    max-width: 90vh;  
-    width: 100%;  
-}  
+ .container-fluid {width: 100%;}
 .row,.title,.btn-box{  
     width: 100%;  
     display: flex;  
     justify-content: center;  
 }  
-.col{  
-    width: 30%;  
-    height: 450px;  
-}  
+
 .col30{  
     background: #495C6A;  
     display: flex;  
@@ -32,12 +26,17 @@ body{
     flex-direction: column;  
     align-items: center;  
     text-align: center;  
-    padding: 0px 20px;  
+    
+    width: 40vw !important;  
+    height: 70vh;  
 }  
 .col50{  
-    width: 500px;  
-    background: #ffff;  
+     
+    background: #ffff;
+    width: 40vw !important;  
+    height: 70vh;    
 }  
+
 .title h1{  
     color: #495C6A;  
     margin: 10px 0;  
@@ -71,4 +70,16 @@ form{
 }  
 #button:hover{background-color: #6336f4;
 color: #fff;}
-img{width: 20vw;height: 40vh;}
+img{width: 20vw;height: 40vh;padding-bottom:2vh;}
+
+@media only  screen and (min-width:300px) and
+ (max-width:440px){ img{width:30vw;height:30vh;
+padding-bottom:5vh;padding-top: 2vh;}
+ .col30, .col50{width:80vw !important; height: 50vh; }
+  .col50{padding-top:3vh;}
+}
+@media only screen and (min-width:441px) and
+ (max-width:1025px) {
+    .col30, .col50{height: 50vh; }
+    
+}
