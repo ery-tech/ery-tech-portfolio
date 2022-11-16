@@ -28,13 +28,13 @@ body{
     text-align: center;  
     
     width: 40vw !important;  
-    height: 70vh;  
+    height: 70vh!important;  
 }  
 .col50{  
      
     background: #ffff;
     width: 40vw !important;  
-    height: 70vh;    
+    height: 70vh !important;    
 }  
 
 .title h1{  
@@ -75,11 +75,13 @@ img{width: 20vw;height: 40vh;padding-bottom:2vh;}
 @media only  screen and (min-width:300px) and
  (max-width:440px){ img{width:30vw;height:30vh;
 padding-bottom:5vh;padding-top: 2vh;}
- .col30, .col50{width:80vw !important; height: 50vh; }
+ .col30, .col50{width:80vw !important; height: auto;
+max-height: 50vh; }
   .col50{padding-top:3vh;}
+ 
 }
 @media only screen and (min-width:441px) and
  (max-width:1025px) {
-    .col30, .col50{height: 50vh; }
-    
+    .col30, .col50{height: auto; max-height:60vh}
+  
 }
