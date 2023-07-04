@@ -1,7 +1,7 @@
 <h1> Hi, this is my first website </h1>
 
 <div align="center">
-<img src="https://media.giphy.com/media/YPJ5gi3MZzSjhtQTIk/giphy.gif" width="250px" height="300px" >
+<img src="https://media.giphy.com/media/WSBeyxvC1jH496xQGA/giphy.gif" width="320px" height="200px" >
 </div>
 
 <h3>Technology stack: </h3>
