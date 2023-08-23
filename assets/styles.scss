@@ -101,7 +101,7 @@ margin-right: 10%;margin-left: 10%;}
          }
        
          50%{transform: 
-            translateY(-2rem)
+            translateY(-1rem)
           }
         
        
@@ -111,9 +111,27 @@ margin-right: 10%;margin-left: 10%;}
          }
        }
      
+       .truncated > * {
+         display: none;
+       }
+       .truncated > p:first-child {
+         display: block;
+         cursor: pointer;
+       }
+       .truncated > p:first-child::before{
+         content: "⯈";
+         font-size: 80%;
+         padding-right: 15px;
+       }
+      .truncated.open >p:first-child::before{
+         content: "	⯆";
+         font-size: 80%;
+         padding-right: 15px;
 
-
-
+      }
+      .truncated.open >p{
+         display: block;
+      }
 
 
 
@@ -137,17 +155,30 @@ padding-top: 700vh;}
 .Projects h2{font-size: $large-font;font-weight: $semi-bold-weight;}
 .projects-col2 h3{font-size: $medium-font;font-weight:$semi-bold-weight ;}
 #Projects-img{width: 450px;}
-.projects-col2{padding-top:18vh;font-size: $small-font;
-font-weight: $regular-weight;}
+.projects-col2 {padding-top:18vh;font-size: $small-font;
+font-weight: $semi-bold-weight;}
 .projects-col2 h3 {padding-bottom: 8vh;}
-.projects-col2 li {padding-bottom: 2vh;}
+.projects-col2 li {padding-bottom: 2vh};
 .footer{padding-top: 300vh; padding-bottom: 10vh;
 font-family: $default-font;font-size: $small-font;
 font-weight: $regular-weight;}
 .footer p{font-weight: $semi-bold-weight;} 
 .footer-container{display:flex;}
+#white  {
+   text-decoration-color: white;
+}
+#white :hover{
 
-
+   text-decoration-color: rgba(255, 255, 255, 0.686)!important;
+}
+ li {
+   list-style: none;
+   text-align: justify;
+   margin-right: 3rem;
+}
+li p:first-child{
+   font-weight: $semi-bold-weight;
+}
 .icons{color:white; display: flex;}
 .icons-i {width: 85px;justify-content:space-evenly;}
 a:link, i {color: white;}
@@ -172,7 +203,7 @@ margin-right: auto;}
 .icons{padding-bottom: 5vh;padding-top:5vh;}
 
 }
-@media only screen and(min-width:421px) and 
+@media only screen and (min-width:421px) and 
 (max-width:768px) {
    .float-container{padding-left:20vw;}
    .container-fluid{margin-left: auto ;
@@ -192,7 +223,7 @@ margin-right: auto;}
          .icons{padding-bottom: 5vh;
          padding-top: 5vh;}
 }
-@media only screen and(min-width:300px) and 
+@media only screen and (min-width:300px) and 
 (max-width:767px) {.icons-i{padding-left: 4vw;}
 .projects-col2{padding-top: 5vh;}}
 
